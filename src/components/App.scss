@@ -1,0 +1,18 @@
+.app {
+  background-image: url(../img/background.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  overflow-y: hidden;
+
+  .wrapper {
+    height: 99%;
+    width: 100%;
+    padding: 20px;
+  }
+}

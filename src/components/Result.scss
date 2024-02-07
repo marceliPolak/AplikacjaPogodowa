@@ -1,0 +1,121 @@
+$tablet: "(min-width: 768px) and (max-width: 1023px)";
+$desktop: "(min-width: 1024px)";
+
+.result {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  padding: 5px;
+  @media #{$tablet} {
+    padding: 15px;
+  }
+  @media #{$desktop} {
+    padding: 20px;
+    justify-content: space-evenly;
+  }
+  .weather-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    @media #{$desktop} {
+      flex-direction: row;
+    }
+    .weather {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: rgba($color: #000, $alpha: 0.8);
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 10px;
+      @media #{$desktop} {
+        padding: 25px;
+      }
+      img {
+        height: 120px;
+        @media #{$tablet} {
+          height: 150px;
+        }
+        @media #{$desktop} {
+          height: 200px;
+        }
+      }
+      .description {
+        font-size: 12px;
+        margin-bottom: 10px;
+        @media #{$tablet} {
+          font-size: 18px;
+        }
+        @media #{$desktop} {
+          font-size: 26px;
+        }
+      }
+      .city {
+        text-transform: capitalize;
+        font-size: 34px;
+        @media #{$tablet} {
+          font-size: 48px;
+        }
+        @media #{$desktop} {
+          font-size: 52px;
+        }
+      }
+      .temp {
+        font-size: 48px;
+        font-weight: 700;
+        @media #{$tablet} {
+          font-size: 52px;
+        }
+        @media #{$desktop} {
+          font-size: 64px;
+        }
+      }
+    }
+  }
+  .gallery {
+    img {
+      height: 150px;
+    }
+  }
+  .column {
+    background-color: rgba($color: #000, $alpha: 0.8);
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    @media #{$tablet} {
+      font-size: 26px;
+    }
+    @media #{$desktop} {
+      font-size: 36px;
+    }
+  }
+  .sun {
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba($color: #000, $alpha: 0.8);
+    font-size: 16px;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 10px;
+    width: 100%;
+    @media #{$tablet} {
+      font-size: 26px;
+    }
+    @media #{$desktop} {
+      font-size: 36px;
+    }
+  }
+  h1 {
+    text-align: center;
+    background-color: red;
+    padding: 20px;
+  }
+}

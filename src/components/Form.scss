@@ -1,0 +1,57 @@
+$tablet: "(min-width: 768px) and (max-width: 1023px)";
+$desktop: "(min-width: 1024px)";
+
+form {
+  display: flex;
+  justify-content: center;
+  input[type="text"] {
+    width: 50%;
+    border: 5px solid black;
+    margin-right: 10px;
+    padding: 3px;
+    border-radius: 10px;
+    font-size: 12px;
+    outline: none;
+    @media #{$tablet} {
+      font-size: 26px;
+      padding: 8px;
+      width: 70%;
+    }
+    @media #{$desktop} {
+      font-size: 36px;
+      padding: 15px;
+    }
+  }
+  button {
+    background-color: #fff;
+    color: black;
+    border: 5px solid black;
+    box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    font-size: 12px;
+    font-weight: 700;
+    outline: none;
+    padding: 10px;
+    cursor: pointer;
+
+    &:disabled {
+      color: #ddd;
+    }
+    @media #{$tablet} {
+      font-size: 26px;
+      padding: 8px;
+    }
+    @media #{$desktop} {
+      font-size: 36px;
+      padding: 15px;
+    }
+
+    &:hover {
+      background-color: white;
+      color: black;
+    }
+    &:disabled:hover {
+      color: #ddd;
+    }
+  }
+}
